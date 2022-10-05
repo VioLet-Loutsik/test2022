@@ -1,0 +1,45 @@
+.block{
+    border: 2px solid;
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+.textSecond{
+    margin-left: 20px;
+}
+.textSecond::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+}
+
+
+
+/* images */
+
+.blocImg{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border: 1px solid red;
+}
+.blocImg img{
+    width: 100%;
+    height: 100%;
+}
+.blocImg::before{
+    content: '';
+    background-color: rgba(141, 129, 129, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+.blocImg:hover::before{
+display: none;
+}
